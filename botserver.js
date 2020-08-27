@@ -18,10 +18,12 @@ bot.on('ready', ()=> {
 bot.on('message', async m=>{
 
     if(!m.content.startsWith(prefix) || m.author.bot ) return;
+    // const args = m.content.slice(prefix.length).trim().split(/ +/);
     const args = m.content.slice(prefix.length).trim().split(' ');
+
     const command = args.shift().toLowerCase();
 
-    if(command==='args-info'){
+    if (command==='args-info'){
         if(!args.length){
             return m.channel.send(`You didn't provide any arguements, ${m.author}`)
         }
@@ -43,7 +45,20 @@ bot.on('message', async m=>{
             console.error(e);
             connection.disconnect();
         });
-    } 
+    }
+    if(command == 'kick') {
+        if(!m.mentions.users.size) {
+            return m.reply('You need to tag a user to kick them......');
+        }
+        const taggedUser = m.mentions.users.first();
+        m.channel.send(`You want to kick ${taggedUser}? `);
+    }
+    else if (command == 'prune' || command == 'clear'){
+        m.channel.bulkDelete(100, true).catch(err => {
+            console.error(err);
+            m.channel.send('There was an error trying to remove the messages in this channel.' ); 
+        }
+    }
 })
 
 
