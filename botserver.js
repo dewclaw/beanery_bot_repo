@@ -46,7 +46,7 @@ bot.on('message', async m=>{
             connection.disconnect();
         });
     }
-    if(command == 'kick') {
+    else if(command == 'kick') {
         if(!m.mentions.users.size) {
             return m.reply('You need to tag a user to kick them......');
         }
@@ -54,10 +54,11 @@ bot.on('message', async m=>{
         m.channel.send(`You want to kick ${taggedUser}? `);
     }
     else if (command == 'prune' || command == 'clear'){
-        m.channel.bulkDelete(100, true).catch(err => {
+        
+        m.channel.bulkDelete(100, true).catch(err=>{
             console.error(err);
-            m.channel.send('There was an error trying to remove the messages in this channel.' ); 
-        }
+            m.channel.send(`There was an error pruning the messages... I'm not programmed to do anything else.`)
+        })
     }
 })
 
