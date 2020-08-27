@@ -1,15 +1,22 @@
-// introducing env variables
+const fs = require('fs');
+
 require('dotenv').config();
-// discordjs library
+
 const Discord = require('discord.js');
-// Get new Bot Client
+
 const bot = new Discord.Client();
-// Video / Audio encoder/decoder
+bot.commands = new Discord.Collection(); 
+
 let ffmpeg = require('ffmpeg');
 
-// configuartion file import
 const {prefix} = require('./config.json');
 
+
+const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+for (const file of commandFiles) {
+	const command = require(`./commands/${file}`);
+	bot.commands.set(command.name, command);
+}
 
 bot.on('ready', ()=> {
     console.info(`Logged in as ${bot.user.tag}`)
@@ -23,43 +30,42 @@ bot.on('message', async m=>{
 
     const command = args.shift().toLowerCase();
 
-    if (command==='args-info'){
-        if(!args.length){
-            return m.channel.send(`You didn't provide any arguements, ${m.author}`)
-        }
-        m.channel.send(`Command name: ${command}\nArguments: ${args}`);
+    if(!bot.commands.get(command)){
+        return m.reply(`That command does not exist, please use the, bb help, command to see what commands are available.....`);
+    } 
+
+    try {
+        console.log(command.name);
+        bot.commands.get(command).execute(m, args)
+    } catch (error) {
+        console.error(error);
+        m.reply('There was an error trying to execute that command....')
     }
+
+    // if (command==='args-info'){
+    //     if(!args.length){
+    //         return m.channel.send(`You didn't provide any arguements, ${m.author}`)
+    //     }
+    //     m.channel.send(`Command name: ${command}\nArguments: ${args}`);
+    // }
     // !bb fucking move 
-    if((command ===  'fucking-move' || command === 'fuckingmove') && m.member.voice.channel) {
-        m.channel.send(`STOP RIGHT THERE CRIMINAL SCUM. NO ONE BREAKS THE LAW ON MY WATCH ${m.author}`)
-        const connection = await m.member.voice.channel.join();
-        const dispatcher = connection.play('clip1.mp3');
-        dispatcher.on('start', ()=>{
-            console.log('Audio is now playing.......');
-        });
-        dispatcher.on('finish', ()=> {
-            console.log('Audio has finished playing.....');
-            connection.disconnect();
-        });
-        connection.on('error', (e)=>{
-            console.error(e);
-            connection.disconnect();
-        });
-    }
-    else if(command == 'kick') {
-        if(!m.mentions.users.size) {
-            return m.reply('You need to tag a user to kick them......');
-        }
-        const taggedUser = m.mentions.users.first();
-        m.channel.send(`You want to kick ${taggedUser}? `);
-    }
-    else if (command == 'prune' || command == 'clear'){
+    // if((command ===  'fucking-move' || command === 'fuckingmove') && m.member.voice.channel) {
+
+    // }
+    // if(command == 'kick') {
+    //     if(!m.mentions.users.size) {
+    //         return m.reply('You need to tag a user to kick them......');
+    //     }
+    //     const taggedUser = m.mentions.users.first();
+    //     m.channel.send(`You want to kick ${taggedUser}? `);
+    // }
+    // else if (command == 'prune' || command == 'clear'){
         
-        m.channel.bulkDelete(100, true).catch(err=>{
-            console.error(err);
-            m.channel.send(`There was an error pruning the messages... I'm not programmed to do anything else.`)
-        })
-    }
+    //     m.channel.bulkDelete(100, true).catch(err=>{
+    //         console.error(err);
+    //         m.channel.send(`There was an error pruning the messages... I'm not programmed to do anything else.`)
+    //     })
+    // }
 })
 
 
