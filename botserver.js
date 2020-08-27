@@ -15,7 +15,8 @@ const {prefix} = require('./config.json');
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
-	bot.commands.set(command.name, command);
+    bot.commands.set(command.name, command);
+    console.log(`Command ${command.name} added to collection` )
 }
 
 bot.on('ready', ()=> {
@@ -35,8 +36,8 @@ bot.on('message', async m=>{
     } 
 
     try {
-        console.log(command.name);
-        bot.commands.get(command).execute(m, args)
+        console.log(command);
+        await bot.commands.get(command).execute(m, args)
     } catch (error) {
         console.error(error);
         m.reply('There was an error trying to execute that command....')

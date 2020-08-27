@@ -1,7 +1,10 @@
 module.exports = {
-    name: 'ping',
+    name: 'prune',
     description: 'pong',
     execute(m, args) { 
-        m.channel.send('Pong.')
+        m.channel.bulkDelete(100, true).catch(err=>{
+            console.error(err);
+            m.channel.send(`There was an error pruning the messages... I'm not programmed to do anything else.`)
+        })
     }
 }
