@@ -13,7 +13,7 @@ const func = () => {
         headers: headers,
         method: 'get'
     }).then((res) => {
-        console.log(res.data)
+        console.log(res.data.joke)
     }).catch((error) => {
         console.error(error);
     });
