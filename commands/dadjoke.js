@@ -16,8 +16,8 @@ module.exports = {
             headers: headers,
             method: 'get'
         }).then((res) => {
-            console.log(res.data)
-            m.channel.send(res.data.joke, {tts: true});
+            console.log(args);
+            m.channel.send(res.data.joke, {tts: args == 'tts' ? true : false});
         }).catch((error) => {
             console.error(error);
         });       
