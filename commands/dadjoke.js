@@ -17,7 +17,7 @@ module.exports = {
             method: 'get'
         }).then((res) => {
             console.log(res.data)
-            m.channel.send(res.data.joke), {tts: true};
+            m.channel.send(res.data.joke, {tts: true});
         }).catch((error) => {
             console.error(error);
         });       
