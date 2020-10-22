@@ -1,6 +1,6 @@
 module.exports = {
     name: 'fuckingmove',
-    description: 'pong',
+    description: 'Best YouTube video in existence.',
     async execute(m, args) { 
         m.channel.send(`STOP RIGHT THERE CRIMINAL SCUM. NO ONE BREAKS THE LAW ON MY WATCH ${m.author}`)
         const connection = await m.member.voice.channel.join();

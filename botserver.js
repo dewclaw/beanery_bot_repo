@@ -69,5 +69,9 @@ bot.on('message', async m=>{
     // }
 })
 
+try {
+    bot.login(process.env.TOKEN);
 
-bot.login(process.env.TOKEN);
+} catch (error) {
+    console.error(error)
+}
