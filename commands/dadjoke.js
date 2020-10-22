@@ -4,7 +4,7 @@ const baseURL = "https://icanhazdadjoke.com/"
 
 const headers = {
     "Accept": 'application/json',
-    "User-Agent": "Andy's Beanery Bot - A Discord Server Bot"
+    "User-Agent": "Andy's Beanery Bot - A Discord Server Bot. Repo @ https://github.com/dewclaw/beanery_bot_repo"
 }
 
 module.exports = { 
