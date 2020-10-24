@@ -80,8 +80,8 @@ module.exports = {
                                 .setDescription(`
                                 \n Image Details: \n 
                                 Age Range: ${messageDetails.ageLow} years - ${messageDetails.ageHigh} years \n 
-                                Gender: ${messageDetails.genderDetails.value}, Confidence: %${messageDetails.genderDetails.confidence} \n
-                                I am %${messageDetails.emotion.confidence} confident this person is ${messageDetails.emotion.type} \n
+                                Gender: ${messageDetails.genderDetails.value}, Confidence: ${messageDetails.genderDetails.confidence}% \n
+                                I am ${messageDetails.emotion.confidence}% confident this person is ${messageDetails.emotion.type} \n
                                 `)
                                 .setImage(url)
                                 m.channel.send(embedMessage);
@@ -92,7 +92,7 @@ module.exports = {
                                 .setTitle("Beanery Bot - Aritifical Intelligence Image Processing")
                                 .setDescription(`
                                 \n Image Details: CELEB DETECTED \n 
-                                Celeb name: ${celebResponse.CelebrityFaces[0].Name} Confidence: %${celebResponse.CelebrityFaces[0].MatchConfidence}
+                                Celeb name: ${celebResponse.CelebrityFaces[0].Name} Confidence: %${celebResponse.CelebrityFaces[0].MatchConfidence}%
                                 `)
                                 .setImage(url)
                                 m.channel.send(embedMessage);
