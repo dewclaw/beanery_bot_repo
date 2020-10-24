@@ -19,8 +19,8 @@ module.exports = {
             url: API_URL,
             params: {
                     template_id: memeTemplate.frank,
-                    username: "dewclaw",
-                    password: "Plmokn12!",
+                    username: process.env.MEME_USERNAME,
+                    password: process.env.MEME_PASSWORD,
                     text0: text0,
                     text1: text1,
             }
