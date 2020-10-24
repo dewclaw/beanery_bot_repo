@@ -1,19 +1,34 @@
 {
-  "name": "discord_bot",
+  "name": "beanery-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Andy's Beanery Bot is an open source Discord bot built on top of the Discord.JS library for NodeJS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "dewclaw",
+  "license": "MIT",
   "dependencies": {
     "@discordjs/opus": "^0.3.2",
+    "aws-sdk": "^2.778.0",
     "axios": "^0.20.0",
     "discord": "^0.8.2",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dewclaw/beanery_bot_repo.git"
+  },
+  "keywords": [
+    "meme-generator",
+    "discordjs",
+    "open-source-discord-bot"
+  ],
+  "bugs": {
+    "url": "https://github.com/dewclaw/beanery_bot_repo/issues"
+  },
+  "homepage": "https://github.com/dewclaw/beanery_bot_repo#readme"
 }

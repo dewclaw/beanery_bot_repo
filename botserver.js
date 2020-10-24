@@ -24,7 +24,8 @@ bot.on('ready', ()=> {
 });
 
 bot.on('message', async m=>{
-
+    // console.log(`Logging M at start`);
+    let originalMessage = m;
     if(!m.content.startsWith(prefix) || m.author.bot ) return;
     // const args = m.content.slice(prefix.length).trim().split(/ +/);
     const args = m.content.slice(prefix.length).trim().split(' ');
@@ -37,7 +38,7 @@ bot.on('message', async m=>{
 
     try {
         console.log(command);
-        await bot.commands.get(command).execute(m, args)
+        await bot.commands.get(command).execute(m, args,originalMessage)
     } catch (error) {
         console.error(error);
         m.reply('There was an error trying to execute that command....')
