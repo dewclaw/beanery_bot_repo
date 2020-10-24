@@ -43,38 +43,63 @@ module.exports = {
                 ]
             }
             console.log("running through AWS")
-            client.detectFaces(params, async (err, response) => {
+            client.detectFaces(params, async (err, plebResponse) => {
                 console.log("Finished")
                 if (err) { 
                     console.log(err)
                 } else {
-                    console.log("setting faceDetails")
-                    const faceDetails = await response.FaceDetails[0];
-                    // console.log(faceDetails)
-                    let messageDetails = {
-                        ageLow: faceDetails.AgeRange.Low,
-                        ageHigh: faceDetails.AgeRange.High,
-                        smilingConfidence: faceDetails.Smile.Confidence,
-                        genderDetails: {
-                            value: faceDetails.Gender.Value,
-                            confidence: faceDetails.Gender.Confidence
+                    client.recognizeCelebrities({ 
+                        "Image": {
+                            'Bytes': new Buffer.from(res,'base64'),
                         },
-                        emotion: {
-                            type: faceDetails.Emotions[0].Type,
-                            confidence: faceDetails.Emotions[0].Confidence
-                        } 
-                    }
-                    console.log(messageDetails)
-                    const embedMessage = new MessageEmbed()
-                    .setTitle("Beanery Bot - Aritifical Intelligence Image Processing")
-                    .setDescription(`
-                    \n Image Details: \n 
-                    Age Range: ${messageDetails.ageLow} years - ${messageDetails.ageHigh} years \n 
-                    Gender: ${messageDetails.genderDetails.value}, Confidence: %${messageDetails.genderDetails.confidence} \n
-                    I am %${messageDetails.emotion.confidence} confident this person is ${messageDetails.emotion.type} \n
-                    `)
-                    .setImage(url)
-                    m.channel.send(embedMessage);
+                    }, async (err, celebResponse) => {
+                        if(err) { 
+                            console.log(err)
+                        }else { 
+                            if(!celebResponse.CelebrityFaces[0]){
+                                console.log("Not celeb")
+                                console.log("setting faceDetails")
+                                const faceDetails = await plebResponse.FaceDetails[0];
+                                // console.log(faceDetails)
+                                let messageDetails = {
+                                    ageLow: faceDetails.AgeRange.Low,
+                                    ageHigh: faceDetails.AgeRange.High,
+                                    smilingConfidence: faceDetails.Smile.Confidence,
+                                    genderDetails: {
+                                        value: faceDetails.Gender.Value,
+                                        confidence: faceDetails.Gender.Confidence
+                                    },
+                                    emotion: {
+                                        type: faceDetails.Emotions[0].Type,
+                                        confidence: faceDetails.Emotions[0].Confidence
+                                    } 
+                                }
+                                console.log(messageDetails)
+                                const embedMessage = new MessageEmbed()
+                                .setTitle("Beanery Bot - Aritifical Intelligence Image Processing")
+                                .setDescription(`
+                                \n Image Details: \n 
+                                Age Range: ${messageDetails.ageLow} years - ${messageDetails.ageHigh} years \n 
+                                Gender: ${messageDetails.genderDetails.value}, Confidence: %${messageDetails.genderDetails.confidence} \n
+                                I am %${messageDetails.emotion.confidence} confident this person is ${messageDetails.emotion.type} \n
+                                `)
+                                .setImage(url)
+                                m.channel.send(embedMessage);
+                            } else {
+                                console.log("celeb")
+                                console.log(celebResponse.CelebrityFaces[0].Name, celebResponse.CelebrityFaces[0].MatchConfidence);
+                                const embedMessage = new MessageEmbed()
+                                .setTitle("Beanery Bot - Aritifical Intelligence Image Processing")
+                                .setDescription(`
+                                \n Image Details: CELEB DETECTED \n 
+                                Celeb name: ${celebResponse.CelebrityFaces[0].Name} Confidence: ${celebResponse.CelebrityFaces[0].MatchConfidence}
+                                `)
+                                .setImage(url)
+                                m.channel.send(embedMessage);
+                            }
+                        }
+                    })
+                    
                     // const attachment = new MessageAttachment(url);
                     // m.channel.send(`
                     // \n Image Details: \n 

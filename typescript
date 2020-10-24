@@ -1,0 +1,279 @@
+Script started on Sat Oct 24 18:01:38 2020
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hnniode    n node script.js[1m [0m[0m [?2004l
+regular image response
+[
+  {
+    BoundingBox: {
+      Width: [33m0.26841267943382263[39m,
+      Height: [33m0.4691004455089569[39m,
+      Left: [33m0.5295448899269104[39m,
+      Top: [33m0.19310925900936127[39m
+    },
+    Landmarks: [ [36m[Object][39m, [36m[Object][39m, [36m[Object][39m, [36m[Object][39m, [36m[Object][39m ],
+    Pose: {
+      Roll: [33m0.7508072257041931[39m,
+      Yaw: [33m-8.937320709228516[39m,
+      Pitch: [33m-5.819751739501953[39m
+    },
+    Quality: { Brightness: [33m91.89109802246094[39m, Sharpness: [33m86.86019134521484[39m },
+    Confidence: [33m99.99765014648438[39m
+  }
+]
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hsscript s sc      s  nnode script.js[1m [0m[0m [?2004l
+regular image response
+Not celeb
+[
+  {
+    BoundingBox: {
+      Width: [33m0.26841267943382263[39m,
+      Height: [33m0.4691004455089569[39m,
+      Left: [33m0.5295448899269104[39m,
+      Top: [33m0.19310925900936127[39m
+    },
+    Landmarks: [ [36m[Object][39m, [36m[Object][39m, [36m[Object][39m, [36m[Object][39m, [36m[Object][39m ],
+    Pose: {
+      Roll: [33m0.7508072257041931[39m,
+      Yaw: [33m-8.937320709228516[39m,
+      Pitch: [33m-5.819751739501953[39m
+    },
+    Quality: { Brightness: [33m91.89109802246094[39m, Sharpness: [33m86.86019134521484[39m },
+    Confidence: [33m99.99765014648438[39m
+  }
+]
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hsscri  s  nnode script.js[1m [0m[0m [?2004l
+/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/script.js:13
+  let myURL="https://media.vanityfair.com/photos/5f0e0825345d8ab7a6f2b117/3:2/w_3000,h_2000,c_limit/JohnnyDepp-2020-GettyImages-1256114971.jpg
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at wrapSafe (internal/modules/cjs/loader.js:1054:16)[39m
+[90m    at Module._compile (internal/modules/cjs/loader.js:1102:27)[39m
+[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)[39m
+[90m    at Module.load (internal/modules/cjs/loader.js:986:32)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:879:14)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)[39m
+[90m    at internal/main/run_main_module.js:17:47[39m
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hnnode script.js[1m [0m[0m [?2004l
+regular image response
+celeb
+Johnny Depp
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hnode script.js[?2004l
+regular image response
+celeb
+{
+  Urls: [ [32m'www.imdb.com/name/nm0000136'[39m ],
+  Name: [32m'Johnny Depp'[39m,
+  Id: [32m'tA4jd'[39m,
+  Face: {
+    BoundingBox: {
+      Width: [33m0.19312499463558197[39m,
+      Height: [33m0.28986868262290955[39m,
+      Left: [33m0.3956249952316284[39m,
+      Top: [33m0.16510318219661713[39m
+    },
+    Confidence: [33m99.99952697753906[39m,
+    Landmarks: [ [36m[Object][39m, [36m[Object][39m, [36m[Object][39m, [36m[Object][39m, [36m[Object][39m ],
+    Pose: {
+      Roll: [33m-12.46290397644043[39m,
+      Yaw: [33m3.5985755920410156[39m,
+      Pitch: [33m-0.7874645590782166[39m
+    },
+    Quality: { Brightness: [33m55.215476989746094[39m, Sharpness: [33m99.40211486816406[39m }
+  },
+  MatchConfidence: [33m100[39m
+}
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hnnode script.js[1m [0m[0m [?2004l
+regular image response
+celeb
+Johnny Depp [33m100[39m
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hnnpm run     n  nnode botserver.js[1m [0m[0m [?2004l
+Command convo added to collection
+Command dadjoke added to collection
+Command detectface added to collection
+Command fuckingmove added to collection
+Command help added to collection
+Command kick added to collection
+Command memegen added to collection
+Command ping added to collection
+Command prune added to collection
+Logged in as Dewclaw's Beanery Bot#3061
+detectface
+detect face hit
+image downloaded
+running through AWS
+Finished
+celeb
+Johnny Depp [33m100[39m
+(node:56875) UnhandledPromiseRejectionWarning: TypeError: Cannot read property '0' of undefined
+    at Response.<anonymous> (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/commands/detectface.js:95:126)
+    at Request.<anonymous> (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/request.js:369:18)
+    at Request.callListeners (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/sequential_executor.js:106:20)
+    at Request.emit (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/sequential_executor.js:78:10)
+    at Request.emit (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/request.js:688:14)
+    at Request.transition (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/dgallo/Documents/node_code/beanery-bot/beanery_bot_repo/node_modules/aws-sdk/lib/request.js:690:12)
+(node:56875) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:56875) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+^C
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hnnode botserver.js[1m [0m[0m [?2004l
+Command convo added to collection
+Command dadjoke added to collection
+Command detectface added to collection
+Command fuckingmove added to collection
+Command help added to collection
+Command kick added to collection
+Command memegen added to collection
+Command ping added to collection
+Command prune added to collection
+Logged in as Dewclaw's Beanery Bot#3061
+detectface
+detect face hit
+Error: connect ECONNREFUSED 127.0.0.1:80
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)[39m {
+  errno: [32m'ECONNREFUSED'[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m80[39m,
+  config: {
+    url: [32m'"https://media.vanityfair.com/photos/5f0e0825345d8ab7a6f2b117/3:2/w_3000,h_2000,c_limit/JohnnyDepp-2020-GettyImages-1256114971.jpg"'[39m,
+    method: [32m'get'[39m,
+    headers: {
+      Accept: [32m'application/json, text/plain, */*'[39m,
+      [32m'User-Agent'[39m: [32m'axios/0.20.0'[39m
+    },
+    transformRequest: [ [36m[Function: transformRequest][39m ],
+    transformResponse: [ [36m[Function: transformResponse][39m ],
+    timeout: [33m0[39m,
+    adapter: [36m[Function: httpAdapter][39m,
+    responseType: [32m'arraybuffer'[39m,
+    xsrfCookieName: [32m'XSRF-TOKEN'[39m,
+    xsrfHeaderName: [32m'X-XSRF-TOKEN'[39m,
+    maxContentLength: [33m-1[39m,
+    maxBodyLength: [33m-1[39m,
+    validateStatus: [36m[Function: validateStatus][39m,
+    data: [90mundefined[39m
+  },
+  request: Writable {
+    _writableState: WritableState {
+      objectMode: [33mfalse[39m,
+      highWaterMark: [33m16384[39m,
+      finalCalled: [33mfalse[39m,
+      needDrain: [33mfalse[39m,
+      ending: [33mfalse[39m,
+      ended: [33mfalse[39m,
+      finished: [33mfalse[39m,
+      destroyed: [33mfalse[39m,
+      decodeStrings: [33mtrue[39m,
+      defaultEncoding: [32m'utf8'[39m,
+      length: [33m0[39m,
+      writing: [33mfalse[39m,
+      corked: [33m0[39m,
+      sync: [33mtrue[39m,
+      bufferProcessing: [33mfalse[39m,
+      onwrite: [36m[Function: bound onwrite][39m,
+      writecb: [1mnull[22m,
+      writelen: [33m0[39m,
+      afterWriteTickInfo: [1mnull[22m,
+      bufferedRequest: [1mnull[22m,
+      lastBufferedRequest: [1mnull[22m,
+      pendingcb: [33m0[39m,
+      prefinished: [33mfalse[39m,
+      errorEmitted: [33mfalse[39m,
+      emitClose: [33mtrue[39m,
+      autoDestroy: [33mfalse[39m,
+      bufferedRequestCount: [33m0[39m,
+      corkedRequestsFree: [36m[Object][39m
+    },
+    writable: [33mtrue[39m,
+    _events: [Object: null prototype] {
+      response: [36m[Function: handleResponse][39m,
+      error: [36m[Function: handleRequestError][39m
+    },
+    _eventsCount: [33m2[39m,
+    _maxListeners: [90mundefined[39m,
+    _options: {
+      maxRedirects: [33m21[39m,
+      maxBodyLength: [33m10485760[39m,
+      protocol: [32m'http:'[39m,
+      path: [32m'%22https://media.vanityfair.com/photos/5f0e0825345d8ab7a6f2b117/3:2/w_3000,h_2000,c_limit/JohnnyDepp-2020-GettyImages-1256114971.jpg%22'[39m,
+      method: [32m'GET'[39m,
+      headers: [36m[Object][39m,
+      agent: [90mundefined[39m,
+      agents: [36m[Object][39m,
+      auth: [90mundefined[39m,
+      hostname: [1mnull[22m,
+      port: [1mnull[22m,
+      nativeProtocols: [36m[Object][39m,
+      pathname: [32m'%22https://media.vanityfair.com/photos/5f0e0825345d8ab7a6f2b117/3:2/w_3000,h_2000,c_limit/JohnnyDepp-2020-GettyImages-1256114971.jpg%22'[39m
+    },
+    _ended: [33mtrue[39m,
+    _ending: [33mtrue[39m,
+    _redirectCount: [33m0[39m,
+    _redirects: [],
+    _requestBodyLength: [33m0[39m,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [36m[Function][39m,
+    _currentRequest: ClientRequest {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m7[39m,
+      _maxListeners: [90mundefined[39m,
+      outputData: [],
+      outputSize: [33m0[39m,
+      writable: [33mtrue[39m,
+      _last: [33mtrue[39m,
+      chunkedEncoding: [33mfalse[39m,
+      shouldKeepAlive: [33mfalse[39m,
+      useChunkedEncodingByDefault: [33mfalse[39m,
+      sendDate: [33mfalse[39m,
+      _removedConnection: [33mfalse[39m,
+      _removedContLen: [33mfalse[39m,
+      _removedTE: [33mfalse[39m,
+      _contentLength: [33m0[39m,
+      _hasBody: [33mtrue[39m,
+      _trailer: [32m''[39m,
+      finished: [33mtrue[39m,
+      _headerSent: [33mtrue[39m,
+      socket: [36m[Socket][39m,
+      connection: [36m[Socket][39m,
+      _header: [32m'GET %22https://media.vanityfair.com/photos/5f0e0825345d8ab7a6f2b117/3:2/w_3000,h_2000,c_limit/JohnnyDepp-2020-GettyImages-1256114971.jpg%22 HTTP/1.1\r\n'[39m +
+        [32m'Accept: application/json, text/plain, */*\r\n'[39m +
+        [32m'User-Agent: axios/0.20.0\r\n'[39m +
+        [32m'Host: localhost\r\n'[39m +
+        [32m'Connection: close\r\n'[39m +
+        [32m'\r\n'[39m,
+      _onPendingData: [36m[Function: noopPendingOutput][39m,
+      agent: [36m[Agent][39m,
+      socketPath: [90mundefined[39m,
+      method: [32m'GET'[39m,
+      insecureHTTPParser: [90mundefined[39m,
+      path: [32m'%22https://media.vanityfair.com/photos/5f0e0825345d8ab7a6f2b117/3:2/w_3000,h_2000,c_limit/JohnnyDepp-2020-GettyImages-1256114971.jpg%22'[39m,
+      _ended: [33mfalse[39m,
+      res: [1mnull[22m,
+      aborted: [33mfalse[39m,
+      timeoutCb: [1mnull[22m,
+      upgradeOrConnect: [33mfalse[39m,
+      parser: [1mnull[22m,
+      maxHeadersCount: [1mnull[22m,
+      reusedSocket: [33mfalse[39m,
+      _redirectable: [36m[Circular][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(kNeedDrain)[39m]: [33mfalse[39m,
+      [[32mSymbol(corked)[39m]: [33m0[39m,
+      [[32mSymbol(kOutHeaders)[39m]: [36m[Object: null prototype][39m
+    },
+    _currentUrl: [32m'http:%22https://media.vanityfair.com/photos/5f0e0825345d8ab7a6f2b117/3:2/w_3000,h_2000,c_limit/JohnnyDepp-2020-GettyImages-1256114971.jpg%22'[39m,
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+  },
+  response: [90mundefined[39m,
+  isAxiosError: [33mtrue[39m,
+  toJSON: [36m[Function: toJSON][39m
+}
