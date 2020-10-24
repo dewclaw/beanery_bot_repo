@@ -69,7 +69,7 @@ module.exports = {
                     .setTitle("Beanery Bot - Aritifical Intelligence Image Processing")
                     .setDescription(`
                     \n Image Details: \n 
-                    Age Range: ${messageDetails.ageLow} years - ${messageDetails.ageHigh} \n 
+                    Age Range: ${messageDetails.ageLow} years - ${messageDetails.ageHigh} years \n 
                     Gender: ${messageDetails.genderDetails.value}, Confidence: %${messageDetails.genderDetails.confidence} \n
                     I am %${messageDetails.emotion.confidence} confident this person is ${messageDetails.emotion.type} \n
                     `)
