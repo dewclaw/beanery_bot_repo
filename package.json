@@ -1,6 +1,6 @@
 {
   "name": "beanery-bot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Andy's Beanery Bot is an open source Discord bot built on top of the Discord.JS library for NodeJS.",
   "main": "index.js",
   "scripts": {
