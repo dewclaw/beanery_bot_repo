@@ -92,7 +92,7 @@ module.exports = {
                                 .setTitle("Beanery Bot - Aritifical Intelligence Image Processing")
                                 .setDescription(`
                                 \n Image Details: CELEB DETECTED \n 
-                                Celeb name: ${celebResponse.CelebrityFaces[0].Name} Confidence: ${celebResponse.CelebrityFaces[0].MatchConfidence}
+                                Celeb name: ${celebResponse.CelebrityFaces[0].Name} Confidence: %${celebResponse.CelebrityFaces[0].MatchConfidence}
                                 `)
                                 .setImage(url)
                                 m.channel.send(embedMessage);

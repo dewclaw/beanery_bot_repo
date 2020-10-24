@@ -277,3 +277,45 @@ Error: connect ECONNREFUSED 127.0.0.1:80
   isAxiosError: [33mtrue[39m,
   toJSON: [36m[Function: toJSON][39m
 }
+detectface
+detect face hit
+image downloaded
+running through AWS
+Finished
+celeb
+Johnny Depp [33m100[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hnnpn  ggit add .[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hggit commit -m "added celeb processing' [?2004l
+[0m[27m[24m[Jdquote> [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hgit commit -m "added celeb processing'  "[?2004l
+[master d7776a1] added celeb processing
+ Committer: Dominic Gallo <dgallo@Dominics-MBP.fios-router.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 352 insertions(+), 35 deletions(-)
+ create mode 100644 typescript
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004hggit a push origin master[?2004l
+Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+Enter passphrase for key '/Users/dgallo/.ssh/id_rsa': 
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 4.44 KiB | 4.44 MiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To github.com:dewclaw/beanery_bot_repo.git
+   4ec954c..d7776a1  master -> master
+[1m[7m%[27m[1m[0m                                                                                                                         [0m[27m[24m[Jdgallo@Dominics-MBP beanery_bot_repo % [K[?2004h
