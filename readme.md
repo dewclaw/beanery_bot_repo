@@ -22,6 +22,11 @@ Andy's Beanery Bot is an open source Discord bot built on top of the Discord.JS 
 
 You can simply pull down a copy of the repo, make any edits you would like and then re-upload to a git repo of your choice. The bot for our server is hosted on a Heroku Dyno. Don't forget to add your own bot Token in the environment variables. 
 
+### Environment Variables You Need
+1. icanhazdadjoke API login
+2. imgflip account
+3. AWS Secret ID, Secret Key, Region
+
 # Commands explained
 
 Still working on the documentation....... This project is not finished or necessarily meant to be put out into 'production'. This repo is really just a place for me to store my work on the project.
