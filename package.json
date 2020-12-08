@@ -15,7 +15,9 @@
     "discord": "^0.8.2",
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
-    "ffmpeg": "0.0.4"
+    "express": "^4.17.1",
+    "ffmpeg": "0.0.4",
+    "twilio": "^3.53.0"
   },
   "devDependencies": {},
   "repository": {

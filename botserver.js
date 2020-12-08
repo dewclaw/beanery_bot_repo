@@ -1,4 +1,5 @@
 const fs = require('fs');
+const repel = require('./repelUser');
 
 require('dotenv').config();
 
@@ -24,6 +25,10 @@ bot.on('ready', ()=> {
 });
 
 bot.on('message', async m=>{
+    if(m.author.id === "362379779749576725" ) {
+        repel()
+        return
+    }
     // console.log(`Logging M at start`);
     let originalMessage = m;
     if(!m.content.startsWith(prefix) || m.author.bot ) return;
@@ -71,8 +76,10 @@ bot.on('message', async m=>{
 })
 
 try {
+    console.log("Logging into discord as bot")
     bot.login(process.env.TOKEN);
 
 } catch (error) {
+    console.log("Error logging in to discord")
     console.error(error)
 }
