@@ -23,9 +23,9 @@ for (const file of commandFiles) {
 bot.on('ready', ()=> {
     console.info(`Logged in as ${bot.user.tag}`)
 });
-
+const billianID = "362379779749576725" 
 bot.on('message', async m=>{
-    if(m.author.id === "362379779749576725" ) {
+    if(m.author.id === billianID) {
         repel()
         return
     }
