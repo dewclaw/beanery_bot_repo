@@ -23,7 +23,7 @@ const repelUser = (m) => {
             console.error(err);
             m.channel.send("Error");
         } else { 
-            randomImageLocation = getRandomIntInclusive(0, data.Contents.length);
+            randomImageLocation = getRandomIntInclusive(0, data.Contents.length - 1);
             imageKey = data.Contents[randomImageLocation].Key;
             console.log(imageKey);
             if(!imageKey){
