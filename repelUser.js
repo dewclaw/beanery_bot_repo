@@ -30,7 +30,7 @@ const repelUser = (m) => {
                 m.channel.send("Error finding image");
             }
             console.log("BEING RAN")
-            params = { 
+            let params = { 
                 Bucket: process.env.AWS_BUCKET_NAME,
                 Key: imageKey
             }
