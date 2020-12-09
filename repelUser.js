@@ -39,10 +39,10 @@ const repelUser = (m) => {
                     console.error(error);
                     m.channel.send("ERROR DOWNLOADING OBJECT");
                 } else { 
-                    console.log(m);
+                    // console.log(m);
                     const attachment = new MessageAttachment(objectData.Body, "image.jpeg");
                     if(m.author.id === billianID && m.attachments) { 
-                        console.log(m);
+                        // console.log(m);
                         console.log("Author has posted an image");
                         m.channel.send(`${m.author} Please enjoy this image `, attachment);
                     }
