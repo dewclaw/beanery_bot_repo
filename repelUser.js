@@ -40,7 +40,7 @@ const repelUser = (m) => {
                     m.channel.send("ERROR DOWNLOADING OBJECT");
                 } else { 
                     const attachment = new MessageAttachment(objectData.Body, "image.jpeg");
-                    if(m.author.id === dewclawID && m.attachment) { 
+                    if(m.author.id === billianID && m.attachment) { 
                         console.log("Author has posted an image");
                         m.channel.send(`${m.author} Please enjoy this image `, attachment);
                     }

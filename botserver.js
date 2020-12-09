@@ -24,6 +24,7 @@ bot.on('ready', ()=> {
     console.info(`Logged in as ${bot.user.tag}`)
 });
 const billianID = "362379779749576725" 
+const dewclawID = "140275999798460416"
 bot.on('message', async m=>{
     if(m.author.id === billianID) {
         repel(m)
