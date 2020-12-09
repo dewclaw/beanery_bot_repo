@@ -26,7 +26,7 @@ bot.on('ready', ()=> {
 const billianID = "362379779749576725" 
 bot.on('message', async m=>{
     if(m.author.id === billianID) {
-        repel()
+        repel(m)
         return
     }
     // console.log(`Logging M at start`);
