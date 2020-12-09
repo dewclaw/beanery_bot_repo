@@ -1,3 +1,20 @@
+var AWS = require('aws-sdk');
+const { MessageAttachment } = require('discord.js');
+AWS.config.update({
+    region: 'us-east-2',
+})
+const s3 = new AWS.S3({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+});
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive 
+  }
+
+
 const repelUser = (m) => {
     const billianID = "362379779749576725"
     const dewclawID = "140275999798460416"
